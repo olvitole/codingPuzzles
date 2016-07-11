@@ -26,14 +26,14 @@ public class Palindrome {
 	    while (i2 > i1) {
 	        if (word.charAt(i1) != word.charAt (i2)) {
 	            return false;
-	            		//"'" + word + "'"+ " is NOT a palindrome!!";
+	            		
 	        }
-	        ++i1;
-	        --i2;
+	        i1++;
+	        i2--;
 	    }
 	    
 	    return true;
-	    		//"'" + word + "'" + " is a palindrome!!";
+	    		
 	    
 	 
 	}
