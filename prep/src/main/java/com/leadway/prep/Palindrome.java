@@ -7,15 +7,30 @@ public class Palindrome {
 	 private static Scanner scnr;
 
 
-	public static void main(String[] args) {
-	 scnr = new Scanner (System.in);
-	System.out.println("Enter a word:");
-	String word = scnr.next();	
-	if (isPalindrome(word) == true) {
-		System.out.println("'" + word + "'" + " is a palindrome!!");
-	} else{
-		System.out.println("'" + word + "'"+ " is NOT a palindrome!!");
-	}
+	 public static void main(String[] args) {
+		 scnr = new Scanner (System.in);
+		 String temp = "";
+		System.out.println("Enter a word:");
+		String word = scnr.next();	
+		if (isPalindrome(word) == true) {
+			System.out.println("'" + word + "'" + " is a palindrome!!");
+			temp = word;
+		} else{
+			System.out.println("'" + word + "'"+ " is NOT a palindrome!!");
+		temp = word;
+			
+		}
+		 while (temp != "exit"){
+			 
+			  word = scnr.next();	
+			  if (isPalindrome(word) == true) {
+					System.out.println("'" + word + "'" + " is a palindrome!!");
+					temp = word;
+				} else{
+					System.out.println("'" + word + "'"+ " is NOT a palindrome!!");
+					temp = word;
+				}
+		}
 
 	}
 	 
