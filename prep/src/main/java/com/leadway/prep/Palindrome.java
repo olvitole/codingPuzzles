@@ -6,7 +6,6 @@ public class Palindrome {
 	
 	 private static Scanner scnr;
 
-
 	 public static void main(String[] args) {
 		 scnr = new Scanner (System.in);
 		 String temp = "";
