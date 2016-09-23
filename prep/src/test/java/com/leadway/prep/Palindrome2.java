@@ -2,7 +2,7 @@ package com.leadway.prep;
 
 import java.util.Scanner;
 
-public class Palindrome {
+public class Palindrome2 {
 
 	private static Scanner scnr;
 
